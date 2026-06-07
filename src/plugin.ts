@@ -1,12 +1,17 @@
 import streamDeck from "@elgato/streamdeck";
+import { PomodoroTimerAction } from "./actions/pomodoro-timer-action";
+import { PomodoroSkipAction } from "./actions/pomodoro-skip-action";
+import { PomodoroSessionsAction } from "./actions/pomodoro-sessions-action";
+import { pomodoroTimer, type PomodoroSettings } from "./timer/pomodoro-timer";
 
-import { IncrementCounter } from "./actions/increment-counter";
-
-// We can enable "trace" logging so that all messages between the Stream Deck, and the plugin are recorded. When storing sensitive information
 streamDeck.logger.setLevel("trace");
 
-// Register the increment action.
-streamDeck.actions.registerAction(new IncrementCounter());
+streamDeck.actions.registerAction(new PomodoroTimerAction());
+streamDeck.actions.registerAction(new PomodoroSkipAction());
+streamDeck.actions.registerAction(new PomodoroSessionsAction());
 
-// Finally, connect to the Stream Deck.
+streamDeck.settings.onDidReceiveGlobalSettings((ev) => {
+	pomodoroTimer.updateSettings(ev.settings as Partial<PomodoroSettings>);
+});
+
 streamDeck.connect();

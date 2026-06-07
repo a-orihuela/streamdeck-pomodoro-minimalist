@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <title>Pomodoro Settings</title>
+    <meta charset="utf-8" />
+    <script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+</head>
+
+<body>
+    <sdpi-item label="Work (min)">
+        <sdpi-textfield global setting="workMinutes" type="number" min="1" max="120" default="25" placeholder="25"></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Break (min)">
+        <sdpi-textfield global setting="breakMinutes" type="number" min="1" max="60" default="5" placeholder="5"></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Long break duration (min)">
+        <sdpi-textfield global setting="longBreakMinutes" type="number" min="1" max="120" default="15" placeholder="15"></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Long break every N pomodoros">
+        <sdpi-textfield global setting="longBreakAfter" type="number" min="1" max="16" default="4" placeholder="4"></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Sound notifications">
+        <sdpi-checkbox global setting="soundEnabled" default="true"></sdpi-checkbox>
+    </sdpi-item>
+</body>
+
+</html>

@@ -1,20 +1,50 @@
-﻿{
+{
 	"Name": "Pomodoro Minimalist",
 	"Version": "0.1.0.0",
 	"Author": "Abraham Orihuela",
 	"Actions": [
 		{
-			"Name": "Counter",
-			"UUID": "com.aom.pomodorominimalist.increment",
-			"Icon": "imgs/actions/counter/icon",
-			"Tooltip": "Displays a count, which increments by one on press.",
-			"PropertyInspectorPath": "ui/increment-counter.html",
+			"Name": "Pomodoro Timer",
+			"UUID": "com.aom.pomodorominimalist.timer",
+			"Icon": "imgs/actions/pomodoro/icon",
+			"Tooltip": "Starts, pauses and resumes the Pomodoro timer.",
+			"PropertyInspectorPath": "ui/pomodoro-settings.html",
 			"Controllers": [
 				"Keypad"
 			],
 			"States": [
 				{
-					"Image": "imgs/actions/counter/key",
+					"Image": "imgs/actions/placeholder",
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Skip / Reset",
+			"UUID": "com.aom.pomodorominimalist.skip",
+			"Icon": "imgs/actions/skip/icon",
+			"Tooltip": "Skips to the next phase. Hold to reset.",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/placeholder",
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Sessions",
+			"UUID": "com.aom.pomodorominimalist.sessions",
+			"Icon": "imgs/actions/sessions/icon",
+			"Tooltip": "Shows the number of completed Pomodoro cycles in the session.",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/placeholder",
 					"TitleAlignment": "middle"
 				}
 			]
