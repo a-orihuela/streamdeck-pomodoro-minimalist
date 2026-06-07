@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Propagates changes from project.config.json to all files that reference the plugin UUID.
  * Run with: npm run sync
  */
@@ -35,9 +35,9 @@ function replaceInFile(filePath) {
 	const original = readFileSync(filePath, "utf8");
 	const updated = original
 		.replaceAll(currentUUID, cfg.uuid)
-		.replaceAll("PLUGIN_NAME", cfg.name)
-		.replaceAll("PLUGIN_AUTHOR", cfg.author)
-		.replaceAll("PLUGIN_DESCRIPTION", cfg.description);
+		.replaceAll("Pomodoro Minimalist", cfg.name)
+		.replaceAll("Abraham Orihuela", cfg.author)
+		.replaceAll("A minimalist pomodoro for Stream Deck", cfg.description);
 	if (updated !== original) {
 		writeFileSync(filePath, updated, "utf8");
 		console.log(`  updated: ${filePath.replace(root + "/", "")}`);

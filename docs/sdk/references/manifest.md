@@ -1,4 +1,4 @@
-# manifest.json Reference
+﻿# manifest.json Reference
 
 The `manifest.json` file is the entry point for every Stream Deck plugin. It describes the plugin's identity, capabilities, supported operating systems, and the actions it exposes. Stream Deck reads this file at plugin load time.
 
@@ -366,7 +366,7 @@ Both the root `UUID` and each action's `UUID` must follow reverse-DNS format:
 ```
 com.elgato.wavelink
 com.elgato.wavelink.toggle-mute
-com.yourcompany.yourplugin.some-action
+com.aom.pomodorominimalist.some-action
 ```
 
 ---

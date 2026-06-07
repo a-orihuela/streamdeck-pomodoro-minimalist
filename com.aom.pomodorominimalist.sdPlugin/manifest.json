@@ -1,11 +1,11 @@
-{
-	"Name": "PLUGIN_NAME",
+﻿{
+	"Name": "Pomodoro Minimalist",
 	"Version": "0.1.0.0",
-	"Author": "PLUGIN_AUTHOR",
+	"Author": "Abraham Orihuela",
 	"Actions": [
 		{
 			"Name": "Counter",
-			"UUID": "com.yourcompany.yourplugin.increment",
+			"UUID": "com.aom.pomodorominimalist.increment",
 			"Icon": "imgs/actions/counter/icon",
 			"Tooltip": "Displays a count, which increments by one on press.",
 			"PropertyInspectorPath": "ui/increment-counter.html",
@@ -20,10 +20,10 @@
 			]
 		}
 	],
-	"Category": "PLUGIN_NAME",
+	"Category": "Pomodoro Minimalist",
 	"CategoryIcon": "imgs/plugin/category-icon",
 	"CodePath": "bin/plugin.js",
-	"Description": "PLUGIN_DESCRIPTION",
+	"Description": "A minimalist pomodoro for Stream Deck",
 	"Icon": "imgs/plugin/marketplace",
 	"SDKVersion": 3,
 	"Software": {
@@ -43,5 +43,5 @@
 		"Version": "24",
 		"Debug": "enabled"
 	},
-	"UUID": "com.yourcompany.yourplugin"
+	"UUID": "com.aom.pomodorominimalist"
 }

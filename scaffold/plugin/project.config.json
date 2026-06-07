@@ -1,7 +1,0 @@
-{
-	"uuid": "com.yourcompany.yourplugin",
-	"name": "PLUGIN_NAME",
-	"author": "PLUGIN_AUTHOR",
-	"description": "PLUGIN_DESCRIPTION",
-	"version": "0.1.0.0"
-}

@@ -1,9 +1,9 @@
-import { action, type KeyDownEvent, SingletonAction, type WillAppearEvent } from "@elgato/streamdeck";
+﻿import { action, type KeyDownEvent, SingletonAction, type WillAppearEvent } from "@elgato/streamdeck";
 
 /**
  * An example action class that displays a count that increments by one each time the button is pressed.
  */
-@action({ UUID: "com.yourcompany.yourplugin.increment" })
+@action({ UUID: "com.aom.pomodorominimalist.increment" })
 export class IncrementCounter extends SingletonAction<CounterSettings> {
 	/**
 	 * Listens for the {@link SingletonAction.onKeyDown} event which is emitted by Stream Deck when an action is pressed.
