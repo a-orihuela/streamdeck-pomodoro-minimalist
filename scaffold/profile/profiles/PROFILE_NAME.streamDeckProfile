@@ -1,0 +1,14 @@
+{
+    "DeviceModel": 0,
+    "DeviceUUID": "",
+    "Name": "PROFILE_NAME",
+    "Pages": {
+        "items": {
+            "0": {
+                "items": {}
+            }
+        },
+        "current": "0"
+    },
+    "Version": "1.0"
+}

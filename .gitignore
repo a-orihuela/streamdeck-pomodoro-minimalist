@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+
+# Stream Deck compiled output
+*.sdPlugin/bin
+*.sdPlugin/logs
+
+# Distribution
+*.streamDeckPlugin
+
+# Source maps
+*.js.map
+
+# Environment
+.env*
